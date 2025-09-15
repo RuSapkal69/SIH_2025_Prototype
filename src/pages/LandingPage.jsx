@@ -1,28 +1,56 @@
+// LandingPage.jsx
+
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import React from "react";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+
+// Note: No more CSS import or backgroundImageUrl constant needed here.
 
 const LandingPage = () => {
   return (
-    <section className="w-full px-1 py-32 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
+    // The section is back to its original centered layout
+    <section className="w-full px-4 py-24 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
       <div>
         <span className="block mb-4 text-xs md:text-sm text-indigo-500 font-medium">
-          Better every day
+          Your Mental Wellness Companion
         </span>
         <h3 className="text-4xl md:text-6xl font-semibold">
-          Let's change it up a bit
+          A safe space to talk and grow
         </h3>
         <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
-            Discover a new way to stay active and motivated with our dynamic through for online therapy classes. Our platform offers a variety of engaging and interactive sessions led by experienced instructors, designed to fit your schedule and fitness level. Whether you're looking to improve your strength, flexibility, or overall well-being, our online therapy classes provide the perfect solution. Join us today and take the first step towards a healthier, happier you!
+          Discover a new path to mental clarity with our AI companion, designed to listen and provide supportive guidance. Our platform offers a secure and non-judgmental space for you to explore your thoughts and feelings, available whenever you need it. Join us today and take the first step towards a healthier, happier you.
         </p>
-        <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
-          Find a center nearby
-        </button>
+
+        {/* The organized button layout is kept */}
+        <div className="flex flex-col items-start gap-4">
+          
+          <Link to="/chat">
+            <button className="bg-indigo-500 text-white font-medium py-3 px-6 rounded-lg text-lg transition-all hover:bg-indigo-600 active:scale-95 shadow-lg hover:shadow-xl">
+              Chat with AI Therapist
+            </button>
+          </Link>
+
+          <div className="flex items-center gap-4 mt-2 text-sm">
+            <Link 
+              to="/signup" 
+              className="text-slate-600 hover:text-indigo-600 font-medium transition-colors"
+            >
+              Sign Up for Newsletter
+            </Link>
+            <span className="text-slate-300">|</span>
+            <button className="text-slate-600 hover:text-indigo-600 font-medium transition-colors">
+              Find a Center Nearby
+            </button>
+          </div>
+
+        </div>
       </div>
       <ShuffleGrid />
     </section>
   );
 };
+
+// ... The rest of your component code (shuffle, squareData, ShuffleGrid) remains the same.
 
 const shuffle = (array) => {
   let currentIndex = array.length,
