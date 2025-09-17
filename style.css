@@ -1,21 +1,20 @@
-/* ===== Google Font ===== */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* ===== Base Styles ===== */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #0d1b2a url('moroccan-flower-dark.png') repeat; /* playful cartoon background */
-  background-size: 150px; /* adjust size of pattern */
+  background: #0d1b2a url('moroccan-flower-dark.png') repeat; 
+  background-size: 150px; 
   color: #222;
   line-height: 1.6;
 }
 
-/* ===== Page Header ===== */
+
 header {
   text-align: center;
   padding: 2.5rem 1rem;
-  background-color: rgba(13, 27, 42, 0.9); /* dark navy overlay */
+  background-color: rgba(13, 27, 42, 0.9); 
    background: #0d1b2a url('moroccan-flower-dark.png') repeat;
   color: #fff;
 }
@@ -31,7 +30,7 @@ header p {
   opacity: 0.85;
 }
 
-/* ===== Content Container (makes text readable over pattern) ===== */
+
 main {
   background: rgba(255, 255, 255, 0.9);
   margin: 2rem auto;
@@ -41,7 +40,7 @@ main {
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-/* ===== How We Work Page ===== */
+
 .work-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -51,7 +50,7 @@ main {
 
 .work-card {
   background: #ffffff;
-  border-left: 6px solid #f77f00; /* bright orange */
+  border-left: 6px solid #f77f00; 
   padding: 1.8rem;
   border-radius: 0.8rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -71,7 +70,7 @@ main {
   font-weight: 600;
 }
 
-/* ===== News & Updates Page ===== */
+
 .news-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -82,7 +81,7 @@ main {
 
 .news-card {
   background: #ffffff;
-  border-top: 5px solid #f77f00; /* orange accent */
+  border-top: 5px solid #f77f00; 
    background: #0d1b2a url('more-leaves-on-green.png') repeat;
   border-radius: 0.8rem;
   padding: 1.8rem;
@@ -99,7 +98,7 @@ main {
 .news-card h2 {
   margin-top: 0;
   font-size: 1.3rem;
-  color: #0d1b2a; /* navy headline */
+  color: #0d1b2a; 
   font-weight: 600;
 }
 
@@ -115,6 +114,7 @@ main {
   right: 1rem;
   font-style: italic;
 }
+
 
 
 
